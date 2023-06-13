@@ -13,6 +13,7 @@
 		70C568182A38A61400B57DF0 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C568172A38A61400B57DF0 /* Memo.swift */; };
 		70C5681A2A38A6A000B57DF0 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C568192A38A6A000B57DF0 /* MemoListView.swift */; };
 		70C5681C2A38A72400B57DF0 /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C5681B2A38A72400B57DF0 /* MemoDetailView.swift */; };
+		70C568202A38A90700B57DF0 /* MemoEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C5681F2A38A90700B57DF0 /* MemoEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		70C568172A38A61400B57DF0 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		70C568192A38A6A000B57DF0 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
 		70C5681B2A38A72400B57DF0 /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
+		70C5681F2A38A90700B57DF0 /* MemoEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				70C568092A38A52C00B57DF0 /* MemoApp.swift */,
 				70C568192A38A6A000B57DF0 /* MemoListView.swift */,
+				70C5681F2A38A90700B57DF0 /* MemoEditView.swift */,
 				70C5681B2A38A72400B57DF0 /* MemoDetailView.swift */,
 				70C568172A38A61400B57DF0 /* Memo.swift */,
 				70C5680D2A38A52E00B57DF0 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C568202A38A90700B57DF0 /* MemoEditView.swift in Sources */,
 				70C568182A38A61400B57DF0 /* Memo.swift in Sources */,
 				70C5681A2A38A6A000B57DF0 /* MemoListView.swift in Sources */,
 				70C5681C2A38A72400B57DF0 /* MemoDetailView.swift in Sources */,
