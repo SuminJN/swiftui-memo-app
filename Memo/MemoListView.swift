@@ -2,7 +2,7 @@ import SwiftUI
 
 struct MemoListView: View {
     //    @State var memos = [Memo]()
-    @State var memos = [Memo(title: "test1", content: "content of test1"), Memo(title: "test2", content: "content of test2"), Memo(title: "test3", content: "content of test3")]
+    @State var memos = [Memo(title: "test1", content: "content"), Memo(title: "test2", content: "content"), Memo(title: "test3", content: "content")]
     
     var body: some View {
         NavigationStack {

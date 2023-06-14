@@ -3,7 +3,7 @@ import SwiftUI
 struct MemoEditView: View {
     @Binding var memos: [Memo]
     @State var memo: Memo = Memo(title: "", content: "")
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         VStack {
@@ -19,7 +19,7 @@ struct MemoEditView: View {
         .navigationBarItems(trailing:
             Button("Save") {
                 memos.append(memo)
-                presentationMode.wrappedValue.dismiss()
+                dismiss()
             }
             .disabled(memo.title.isEmpty || memo.content.isEmpty)
         )
