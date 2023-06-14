@@ -16,17 +16,18 @@ struct MemoEditView: View {
         }
         .padding()
         .navigationBarTitle("New Memo")
-        .navigationBarItems(trailing: Button("Save") {
-            memos.append(memo)
-            presentationMode.wrappedValue.dismiss()
-        }
+        .navigationBarItems(trailing:
+            Button("Save") {
+                memos.append(memo)
+                presentationMode.wrappedValue.dismiss()
+            }
             .disabled(memo.title.isEmpty || memo.content.isEmpty)
         )
     }
 }
 
-//struct MemoEditView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MemoEditView()
-//    }
-//}
+struct MemoEditView_Previews: PreviewProvider {
+    static var previews: some View {
+        MemoEditView(memos: .constant([Memo(title: "test1", content: "123"), Memo(title: "test2", content: "123"), Memo(title: "test3", content: "123")]))
+    }
+}

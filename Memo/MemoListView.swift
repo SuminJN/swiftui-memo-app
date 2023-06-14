@@ -1,23 +1,16 @@
 import SwiftUI
 
 struct MemoListView: View {
-//    @State var memos = [Memo]()
-    @State var memos = [Memo(title: "test1", content: "123"), Memo(title: "test2", content: "123"), Memo(title: "test3", content: "123")]
+    //    @State var memos = [Memo]()
+    @State var memos = [Memo(title: "test1", content: "content of test1"), Memo(title: "test2", content: "content of test2"), Memo(title: "test3", content: "content of test3")]
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(memos) { memo in
-                    NavigationLink(destination: MemoDetailView(memo: memo)) {
-                        VStack(alignment: .leading) {
-                            Text(memo.title)
-                                .font(.headline)
-                            Text(memo.content)
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        }
-                    }
-                }
+        NavigationStack {
+            List(memos) { memo in
+                NavigationLink(memo.title, value: memo)
+            }
+            .navigationDestination(for: Memo.self) { memo in
+                MemoDetailView(memo: memo)
             }
             .navigationTitle("Memo")
             .navigationBarItems(trailing: NavigationLink(destination: MemoEditView(memos: $memos)) {
